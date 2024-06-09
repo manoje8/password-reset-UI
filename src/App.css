@@ -1,0 +1,122 @@
+body {
+  line-height: 1;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.container-fluid {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: blanchedalmond;
+}
+
+.inner-container {
+  display: inherit;
+  gap: 3rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-height: 510px;
+  min-width: auto;
+  padding: 4.8rem;
+}
+
+section {
+  flex: 1;
+}
+
+.title {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.428;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.title sub-title {
+  font-size: 1rem;
+  line-height: 1.428;
+  color: #333;
+  margin-bottom: 1.8rem;
+}
+
+form{
+  margin-top: 1.8rem;
+}
+
+.forgot-password
+{
+  margin-top: 1.8rem;
+  line-height: 1.428;
+}
+
+u, a {
+  color: #333;
+  text-underline-offset: 0.4rem;
+  padding-bottom: 0.1rem;
+}
+
+u, a:hover{
+  color: #00000099;
+}
+
+ul {
+  margin-top: 1.8rem;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.8rem;
+  line-height: 1.428;
+}
+
+ul li:before {
+  content: '✓  ';
+}
+
+/* Resend email page */
+
+.left-panel {
+  height: 400px;
+  width: 500px;
+  object-fit: fill;
+  border-radius: 10px;
+  clip-path: circle(40%);
+  
+}
+
+.left-panel:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: rotate 5s infinite ;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  50% {transform: rotate(360deg);}
+}
+
+.email {
+  margin: 1.8rem 0;
+}
+
+/* Home Page */
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  background: url('https://images.pexels.com/photos/1033729/pexels-photo-1033729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #353131;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
